@@ -1,0 +1,24 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res/it.moondroid.compoundview.example"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity" >
+
+    <it.moondroid.compoundview.example.CompoundView
+        android:id="@+id/compoundview1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        custom:hint="enter 1st text here"
+        custom:label="Label1" />
+
+    <it.moondroid.compoundview.example.CompoundView
+        android:id="@+id/compoundview2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/compoundview1"
+        custom:hint="enter 2nd text here"
+        custom:label="Label2" />
+
+</RelativeLayout>

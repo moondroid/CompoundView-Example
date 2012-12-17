@@ -1,0 +1,36 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/compoundText"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+
+    <!-- android:id="@+id/textLabel" -->
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:tag="textLabel"
+        android:text="Label" />
+
+    <!-- You have to remove id, because if you have multiple controls in your xml with same "id",
+     then when it saves state, and then restores state, all controls with the same id get the same value -->
+    <!-- android:id="@+id/textEdit" -->
+
+    <EditText
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="4"
+        android:hint="enter text here"
+        android:maxLines="1"
+        android:tag="textEdit" >
+    </EditText>
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:tag="buttonOK"
+        android:text="OK" />
+
+</LinearLayout>
